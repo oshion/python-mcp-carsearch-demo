@@ -1,3 +1,4 @@
-mcp[cli]>=1.6.0
+mcp[cli,websockets]>=1.6.0
 pymysql
 cryptography
+uvicorn  # FastAPI 서버를 위해 필요

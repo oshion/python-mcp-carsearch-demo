@@ -1,11 +1,41 @@
 startCommand:
-  type: sse
-  configSchema: {}
-  commandFunction: |
-    function(config) {
-      return {
-        command: "uvicorn",
-        args: ["app.main:app", "--host", "0.0.0.0", "--port", "8000"],
-        env: {}
-      };
+  type: stdio
+  configSchema: {
+    # 데이터베이스 설정을 위한 구성 스키마 추가
+    "type": "object",
+    "properties": {
+      "DB_HOST": {
+        "type": "string",
+        "default": "localhost",
+        "description": "데이터베이스 호스트"
+      },
+      "DB_USER": {
+        "type": "string",
+        "default": "car_db",
+        "description": "데이터베이스 사용자"
+      },
+      "DB_PASSWORD": {
+        "type": "string",
+        "default": "car1245!@#$%",
+        "description": "데이터베이스 비밀번호"
+      },
+      "DB_NAME": {
+        "type": "string",
+        "default": "car_db",
+        "description": "데이터베이스 이름"
+      }
     }
+  }
+  commandFunction: |
+    (config) => ({
+      "command": "python",
+      "args": [
+        "-m", "app.main"
+      ],
+      "env": {
+        "DB_HOST": config.DB_HOST || "localhost",
+        "DB_USER": config.DB_USER || "car_db",
+        "DB_PASSWORD": config.DB_PASSWORD || "car1245!@#$%",
+        "DB_NAME": config.DB_NAME || "car_db"
+      }
+    })
