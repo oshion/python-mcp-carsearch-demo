@@ -326,9 +326,9 @@ car_tools = CarTools()
 # 서버 실행 코드 추가
 async def main():
     # 서버 실행 (stdio 또는 SSE 선택)
-    mcp.run(transport="stdio")
+    # mcp.run(transport="stdio")
     # SSE로 실행하려면 아래 코드 사용
-    # mcp.run(transport="sse")
+    mcp.run(transport="sse")
 
 
 # 스크립트가 직접 실행될 때만 서버 실행
