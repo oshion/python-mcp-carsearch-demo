@@ -16,7 +16,7 @@ startCommand:
       },
       "DB_PASSWORD": {
         "type": "string",
-        "default": "car1245!@#$%",
+        "default": "test",
         "description": "데이터베이스 비밀번호"
       },
       "DB_NAME": {

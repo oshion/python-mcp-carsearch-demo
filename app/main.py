@@ -51,7 +51,7 @@ def get_db_config():
         import os
         return {
             'host': os.environ.get('DB_HOST', 'localhost'),
-            'user': os.environ.get('DB_USER', 'car'),
+            'user': os.environ.get('DB_USER', 'car_db'),
             'password': os.environ.get('DB_PASSWORD', 'test'),
             'db': os.environ.get('DB_NAME', 'car_db'),
             'charset': 'utf8mb4',
