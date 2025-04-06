@@ -3,7 +3,7 @@
 이 프로젝트는 자동차 데이터베이스를 MCP(Model Context Protocol) 서버로 노출하는 애플리케이션입니다. LLM(Large Language Model)이 자동차 데이터베이스에 접근하여 검색, 조회 및 추천 기능을 사용할 수 있게 합니다.
 
 ## 데모
-<video src="https://nest-resource-bucket.s3.ap-northeast-2.amazonaws.com/MCP_local_demo.mp4" controls width="600"></video>
+https://nest-resource-bucket.s3.ap-northeast-2.amazonaws.com/MCP_local_demo.mp4
 
 ## 기능
 
