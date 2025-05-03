@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/oshion-python-mcp-carsearch-demo-badge.png)](https://mseep.ai/app/oshion-python-mcp-carsearch-demo)
+
 # Car Database MCP Server
 
 이 프로젝트는 자동차 데이터베이스를 MCP(Model Context Protocol) 서버로 노출하는 애플리케이션입니다. LLM(Large Language Model)이 자동차 데이터베이스에 접근하여 검색, 조회 및 추천 기능을 사용할 수 있게 합니다.
